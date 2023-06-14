@@ -22,6 +22,13 @@ class LBGiOSTestTests: XCTestCase {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
+    
+    func testUserFormModel_canCreateInstance()  {
+        
+        let instance = QuestionModel(questions: [Questions(correct_answer:"Kumar",option_1: "test1",option_2: "Test2",option_3: "Test3",option_4: "Test4",question: "What is your name?")])
+        
+        XCTAssertNotNil(instance)
+    }
 
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
